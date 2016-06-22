@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.apple.PackageMaker" authoringToolVersion="3.0.6" authoringToolBuild="201">
+    <title>NeXT Flavor Pack 2014</title>
+    <options customize="always" allow-external-scripts="no" rootVolumeOnly="false"/>
+    <welcome language="en" mime-type="text/rtf"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf0 Here's an installer for a few screen savers and some sounds.\
+\
+One is a modified version of the built-in screen saver that ships with Leopard to replace the transparent Apple logo with the original NeXT logo.\
+\
+One is a simplified Quartz Composer version of the same, which will run on Snow Leopard.\
+\
+Also present are the full set of NeXT sounds, including Crow.\
+\
+NOTE/WARNING: When installed, you will have 'Glass' from OPENSTEP 4.2, as well as 'Glass' from Mac OS X, and so on.}]]></welcome>
+    <license language="en" mime-type="text/rtf"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf0 These sounds are copyright Apple, Inc. and are presented here as a tribute.}]]></license>
+    <choices-outline>
+        <line choice="choice0"/>
+        <line choice="choice1"/>
+        <line choice="choice2"/>
+        <line choice="choice3"/>
+        <line choice="choice4"/>
+        <line choice="choice5"/>
+        <line choice="choice6"/>
+        <line choice="choice7"/>
+        <line choice="choice8"/>
+        <line choice="choice9"/>
+        <line choice="choice10"/>
+        <line choice="choice11"/>
+        <line choice="choice12"/>
+        <line choice="choice13"/>
+        <line choice="choice14"/>
+        <line choice="choice15"/>
+        <line choice="choice16"/>
+        <line choice="choice17"/>
+        <line choice="choice18"/>
+    </choices-outline>
+    <choice id="choice0" title="NeXT10.5.5" description="A modified version of the 'Message' screensaver bundle which displays the default NeXT graphic from the default screen blanker in NeXTSTEP.
+
+Does not work in 10.7+" start_selected="false">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.NeXT10.5.5.pkg"/>
+    </choice>
+    <choice id="choice1" title="NeXTLogoFade" description="A Quartz Composer screen saver to display the NeXT logo graphic. Does not exactly mimic the fade behavior, and has some artifacting on some OS X versions.">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.NeXTLogoFade.pkg"/>
+    </choice>
+    <choice id="choice2" title="Basso">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Basso.pkg"/>
+    </choice>
+    <choice id="choice3" title="Block">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Block.pkg"/>
+    </choice>
+    <choice id="choice4" title="Bonk">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Bonk.pkg"/>
+    </choice>
+    <choice id="choice5" title="Bullfrog">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Bullfrog.pkg"/>
+    </choice>
+    <choice id="choice6" title="Cricket">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Cricket.pkg"/>
+    </choice>
+    <choice id="choice7" title="Crow">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Crow.pkg"/>
+    </choice>
+    <choice id="choice8" title="Drip">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Drip.pkg"/>
+    </choice>
+    <choice id="choice9" title="Frog">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Frog.pkg"/>
+    </choice>
+    <choice id="choice10" title="Funk">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Funk.pkg"/>
+    </choice>
+    <choice id="choice11" title="Glass">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Glass.pkg"/>
+    </choice>
+    <choice id="choice12" title="Ni">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Ni.pkg"/>
+    </choice>
+    <choice id="choice13" title="Ping">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Ping.pkg"/>
+    </choice>
+    <choice id="choice14" title="Poit">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Poit.pkg"/>
+    </choice>
+    <choice id="choice15" title="Pop">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Pop.pkg"/>
+    </choice>
+    <choice id="choice16" title="Rooster">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Rooster.pkg"/>
+    </choice>
+    <choice id="choice17" title="Tink">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.Tink.pkg"/>
+    </choice>
+    <choice id="choice18" title="NeXT Flavor Pack" description="Icon set originally from 2001 and 10.0. Inspired by Keith Ohlfs icons for NeXT.">
+        <pkg-ref id="org.juddy.nextFlavorPack2010.NeXTFlavorPack.pkg"/>
+    </choice>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.NeXT10.5.5.pkg" installKBytes="324" version="1.0" auth="Root">file:./Contents/Packages/next1055.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.NeXTLogoFade.pkg" installKBytes="96" version="1.0" auth="Root">file:./Contents/Packages/nextlogofade.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Basso.pkg" installKBytes="16" version="1.0" auth="Root">file:./Contents/Packages/basso.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Block.pkg" installKBytes="28" version="1.0" auth="Root">file:./Contents/Packages/block.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Bonk.pkg" installKBytes="8" version="1.0" auth="Root">file:./Contents/Packages/bonk.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Bullfrog.pkg" installKBytes="36" version="1.0" auth="Root">file:./Contents/Packages/bullfrog.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Cricket.pkg" installKBytes="20" version="1.0" auth="Root">file:./Contents/Packages/cricket.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Crow.pkg" installKBytes="36" version="1.0" auth="Root">file:./Contents/Packages/crow.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Drip.pkg" installKBytes="12" version="1.0" auth="Root">file:./Contents/Packages/drip.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Frog.pkg" installKBytes="8" version="1.0" auth="Root">file:./Contents/Packages/frog.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Funk.pkg" installKBytes="16" version="1.0" auth="Root">file:./Contents/Packages/funk.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Glass.pkg" installKBytes="68" version="1.0" auth="Root">file:./Contents/Packages/glass.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Ni.pkg" installKBytes="20" version="1.0" auth="Root">file:./Contents/Packages/ni.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Ping.pkg" installKBytes="36" version="1.0" auth="Root">file:./Contents/Packages/ping.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Poit.pkg" installKBytes="12" version="1.0" auth="Root">file:./Contents/Packages/poit.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Pop.pkg" installKBytes="4" version="1.0" auth="Root">file:./Contents/Packages/pop.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Rooster.pkg" installKBytes="200" version="1.0" auth="Root">file:./Contents/Packages/rooster.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.Tink.pkg" installKBytes="4" version="1.0" auth="Root">file:./Contents/Packages/tink.pkg</pkg-ref>
+    <pkg-ref id="org.juddy.nextFlavorPack2010.NeXTFlavorPack.pkg" installKBytes="2588" version="1.0" auth="Root">file:./Contents/Packages/nextFlavorPack.pkg</pkg-ref>
+</installer-script>
